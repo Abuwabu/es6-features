@@ -18,12 +18,15 @@ class Person {
 
 
 var person1 = new Person('adam');
-var person2 = new Person();
-
 console.log(person1.name);
-console.log(person2.name);
-
 person1.printGreeting();
+
+var person2 = new Person();
+console.log(person2.name);
 person2.printGreeting();
+
+var person3 = new Person();
+person3.name = 'hannah';    // overrides the capitalizeWord method — need a custom getter/setter
+person3.printGreeting();
 
 console.log(Person.capitalizeWord('abuwabu'));
