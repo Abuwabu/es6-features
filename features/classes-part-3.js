@@ -1,3 +1,4 @@
+// PERSON CLASS
 class Person {
   // Constructor function
   constructor (name) {
@@ -23,6 +24,9 @@ class Person {
   }
 };
 
+
+
+// EMPLOYEE SUBCLASS
 class Employee extends Person {
   constructor (name, job = 'Unemployed') {
 
@@ -40,6 +44,7 @@ class Employee extends Person {
     super.printGreeting();
   }
 };
+
 
 
 var person1 = new Employee('adam', 'developer');
